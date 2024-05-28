@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Dom</title>
+      <style>
+        div{
+            font: normal 20pt arial;
+            background: rgba(85, 255, 85, 0.664);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+      </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair ()"> <!-- estamos configurando um evento em HTML-->
+      interaja...
+    </div>
+    <script>
+        var a = window.document.getElementById ('area')
+        /* fazendo a configuração dos eventos em JAVAS*/
+        a.addEventListener('clicar',clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+       function clicar () {
+        a.innerText = 'CLICOU'
+        a.style.background = 'red'
+       }
+       function entrar (){
+        a.innerText = 'ENTROU'
+       }
+       function sair ( ){
+        a.innerText = 'SAIU'
+        a.style.background = 'green'
+       }
+    </script>
+</body>
+</html>

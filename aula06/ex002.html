@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body{
+            background-color: rgb(105, 105,173);
+            color: white; /* comentário em css*/ 
+            font: normal,20pt, arial;
+        }
+    </style>
+</head>
+<body>
+  <h1>   olá, mundo!</h1> <!--Isso é um comentario em html--> 
+  <p> Já me livrei da maldição.</p>
+  <script>
+    var nome = window.prompt(' Qual é o seu nome?')
+    var idade = window.prompt('Qual a sua idade ')
+    window.alert('É um enorme prazer te conhecer ' + nome + ' e a sua idade é '  + idade +  ' anos.')/* dessa forma estamos fazendo a concatenação*/
+    window.alert(`E um enorme prazer te conhecer ${nome} e a sua idade eh ${idade} anos.`)/*Dessa maneira aqui usamos a crase ` (alt+96) apenas no inicio e no final da frase, no lugar do + que realiza a concatenação entre a variável e a frase, na hora de declarar a variável colocamos ${aqui dentro vai o none da variável}*/
+  </script>
+</body>
+</html>

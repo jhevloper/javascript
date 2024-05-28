@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com DOM </title>
+    <style>
+        body{
+            background:rgb(52, 52, 158);
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <H1> Iniciando estudos com DOM </H1>
+    <p> Aqui vai o resultado</p>
+    <p> Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+      var corpo=window.document.body
+      var p1= window.document.getElementsByTagName('p') /* estou  selecionando por marca, mais de um elemento*/ [0]/* esse zero representa o primeio paragrafo que aparecer, caso eu queira que mostre os demais, é só dar sequencia conforme numeros de paragrafos existentes*/
+      window.document.write('Está escrito assim: ' + p1.innerText) /* esse comando p1.innertext mostra o contéudo que está dentro do paragrafo. O innertext pega o texto sem a formatação, sem os filhos. Para pegar com a formatação usamos o inner.html*/
+      var d = window.document.getElementById('msg')/* estou selecionando por id*/
+      // usando seleção por seletor//
+      var d = window.document.querySelector('div#msg')
+      d.style.background = 'blue' 
+      
+    </script>
+</body>
+</html>
